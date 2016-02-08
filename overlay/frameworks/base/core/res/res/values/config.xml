@@ -443,4 +443,9 @@
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
     <integer name="config_deviceHardwareKeys">64</integer>
+
+    <!-- Hide Project Fi app unless it is being used -->
+    <string-array name="config_disabledUntilUsedPreinstalledCarrierApps">
+        <item>com.google.android.apps.tycho</item>
+    </string-array>
 </resources>
