@@ -3,6 +3,6 @@
     "remote": "aosp",
     "repository": "kernel/msm",
     "target_path": "kernel/huawei/angler",
-    "revision": "android-msm-angler-3.10-nougat"
+    "revision": "android-msm-angler-3.10-nougat-mr1"
   }
 ]
