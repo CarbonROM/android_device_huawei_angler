@@ -1,8 +1,7 @@
 [
   {
-    "remote": "aosp",
-    "repository": "kernel/msm",
+    "repository": "CarbonROM/android_kernel_huawei_angler",
     "target_path": "kernel/huawei/angler",
-    "revision": "android-msm-angler-3.10-nougat-mr1"
+    "revision": "cr-5.1"
   }
 ]
