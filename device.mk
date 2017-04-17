@@ -474,7 +474,8 @@ ifneq (,$(filter userdebug, $(TARGET_BUILD_VARIANT)))
 endif
 
 # setup dalvik vm configs.
-$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/phone-xxxhdpi-3072-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/phone-xxxhdpi-3072-hwui-memory.mk)
 
 # drmservice prop
 PRODUCT_PROPERTY_OVERRIDES += \
