@@ -22,6 +22,9 @@ $(call inherit-product, device/huawei/angler/aosp_angler.mk)
 # Inherit Carbon GSM telephony parts
 $(call inherit-product, vendor/carbon/config/gsm.mk)
 
+SDCLANG := true
+TARGET_USE_SDCLANG := true
+
 # Inherit Carbon product configuration
 $(call inherit-product, vendor/carbon/config/common.mk)
 
