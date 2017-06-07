@@ -148,5 +148,6 @@ HWUI_COMPILE_FOR_PERF := true
 NXP_CHIP_TYPE := 2
 
 USE_CLANG_PLATFORM_BUILD := true
+TARGET_USE_SDCLANG := true
 
 -include vendor/huawei/angler/BoardConfigVendor.mk
