@@ -44,3 +44,9 @@ allow system_server graphics_device:chr_file rw_file_perms;
 
 # Access for thermal-engine
 allow system_server sysfs_thermal:file write;
+
+allow system_server kernel:system syslog_read;
+allow system_server self:capability sys_module;
+allow system_server theme_data_file:file read;
+allow system_server user_profile_data_file:dir read;
+
