@@ -20,6 +20,11 @@ allow perfd sysfs_thermal:file rw_file_perms;
 
 allow perfd sysfs_power_management:file w_file_perms;
 
+allow platform_app perfd_data_file:dir search;
+allow platform_app perfd_data_file:sock_file write;
+allow untrusted_app perfd_data_file:dir search;
+allow untrusted_app perfd_data_file:sock_file write;
+
 # allow writing to /sys/devices/system/cpu/*
 allow perfd sysfs_devices_system_cpu:file rw_file_perms;
 
