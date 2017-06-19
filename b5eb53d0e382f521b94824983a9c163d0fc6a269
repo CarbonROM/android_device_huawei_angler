@@ -1,0 +1,4 @@
+{
+  "pushCert": "certificate version 0.1\npusher Adin Kwok \u003cadin.kwok@carbonrom.org\u003e 1497913253 +0530\npushee ssh://review.carbonrom.org:29418/CarbonROM/android_device_huawei_angler\nnonce 1497913255-9DF617A0DDAAF4443A0E63829A1D81125EAA2D84\n\n0000000000000000000000000000000000000000 b5eb53d0e382f521b94824983a9c163d0fc6a269 refs/for/cr-5.1\n-----BEGIN PGP SIGNATURE-----\nVersion: GnuPG v1\n\niQEcBAABAgAGBQJZSFelAAoJEHIxmFn9TBy6TpMIAL0dyuCJMeRYPBEUytfVt1hi\nvo+H+nqGninAggkO5e4Mv010dibE+Ec3OLZl6ZPAj9ULIE53/fz2wl1ZhE8zUpGM\nDk9V7AiAkBEiVYTJoNH7/XOvMwSh9y57hsWvkGzASfp4RLrFYREWoHIQ2j0qDTm8\n1w//+hpY4PuCe4ybFJ64Oa6eOxWFoRyjbcPbbUzeKz4zYvD/4F0fvknESI+Vkphu\nW+86yGQFI0wpA9Uqz//vSVfuU+Ht/sI92VbonfTbeNQMfhSetAg77oUE5tB3ngok\nrUHhHALZicA1dbD8pmmCYjOWhm/WNEtQBIhmEVt7lYOVj6q/h/dgQq40ksav5l4\u003d\n\u003dQXBX\n-----END PGP SIGNATURE-----\n",
+  "comments": []
+}
