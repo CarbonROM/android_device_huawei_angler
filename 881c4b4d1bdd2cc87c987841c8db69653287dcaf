@@ -1,0 +1,4 @@
+{
+  "pushCert": "certificate version 0.1\npusher C249223A 1499876104 -0500\npushee ssh://review.carbonrom.org:29418/CarbonROM/android_device_huawei_angler\nnonce 1499876733-15AE17026425C306AAADC5AD9CEA796D970764E3\n\n0000000000000000000000000000000000000000 881c4b4d1bdd2cc87c987841c8db69653287dcaf refs/for/cr-5.1\n-----BEGIN PGP SIGNATURE-----\n\niQEcBAABAgAGBQJZZksIAAoJEJ8pB5zCSSI688YIAIWDEv/3RpFE8eszIDCZoGS2\ntAb3x4iWaZ9JW+ylGxmcvI4QkdhrGILysVvdTBASdpXmC8v9auU1mIX+SlPxCGn+\n6dojqNhAv4udJIclxCI9m/hmjwjQsKZtpr0nvRKvDBl85MrKtRmx9uVkqmrfD+4K\nrG0AHXqSh+FlXn/9aFoXDABiKwFYsDoDMHRWKgTFQcHSlQ/OOfusBB/i773CZUPY\nuF4sWZaoWneic+RlUoJGfp4oVj/M8GzHjU9hvZQt25yadHKm4iHcmGsQyjXrzjxm\nq17qGLZNrfQ5X23XVKqgOvWRI7zSfYDPgfMNSrVGs1CzdOexNBPvcbZK0RRsASI\u003d\n\u003dGGrk\n-----END PGP SIGNATURE-----\n",
+  "comments": []
+}
