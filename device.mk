@@ -512,3 +512,7 @@ endif
 # b/29995499
 $(call add-product-sanitizer-module-config,cameraserver,never)
 $(call add-product-sanitizer-module-config,mm-qcamera-daemon,never)
+
+# Pixel Experience
+PRODUCT_COPY_FILES += \
+    device/huawei/angler/nexus.xml:system/etc/sysconfig/nexus.xml
