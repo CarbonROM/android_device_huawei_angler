@@ -236,6 +236,10 @@ on post-fs-data
     chmod 0660 /sys/devices/system/cpu/cpu6/online
     chown system system /sys/devices/system/cpu/cpu7/online
     chmod 0660 /sys/devices/system/cpu/cpu7/online
+
+    #Create IOP  deamon related dirs
+    mkdir /data/misc/iop 0770 root system
+
 on charger
    #set cpu4,5 online first, or they can't get into low power consumption mode
    write /sys/devices/system/cpu/cpu4/online 1
@@ -487,6 +491,12 @@ service ppd /system/bin/mm-pp-daemon
     user system
     socket pps stream 0660 system system
     group system graphics
+
+service iop /system/bin/iop
+    class main
+    user root
+    group root
+    writepid /dev/cpuset/system-background/tasks
 
 on property:init.svc.surfaceflinger=stopped
     stop ppd
