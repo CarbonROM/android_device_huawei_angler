@@ -83,7 +83,6 @@ MAX_VIRTUAL_DISPLAY_DIMENSION := 2048
 TARGET_USES_HWC2 := true
 VSYNC_EVENT_PHASE_OFFSET_NS := 2000000
 SF_VSYNC_EVENT_PHASE_OFFSET_NS := 6000000
-NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 
 HAVE_ADRENO_SOURCE:= false
 
@@ -107,7 +106,7 @@ BOARD_NEEDS_VENDORIMAGE_SYMLINK := true
 
 TARGET_AUX_OS_VARIANT_LIST := angler
 
-TARGET_RECOVERY_FSTAB = device/huawei/angler/fstab.angler
+TARGET_RECOVERY_FSTAB := device/huawei/angler/fstab.angler
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_RELEASETOOLS_EXTENSIONS := device/huawei/angler
 
@@ -143,8 +142,6 @@ BOARD_VENDOR_QCOM_LOC_PDK_FEATURE_SET := true
 #NFC
 NXP_CHIP_TYPE := 2
 
-USE_CLANG_PLATFORM_BUILD := true
-
 TARGET_FS_CONFIG_GEN += device/huawei/angler/config.fs
 
 # Conditional to building on linux, as dex2oat currently does not work on darwin.
@@ -152,4 +149,5 @@ ifeq ($(HOST_OS),linux)
    WITH_DEXPREOPT::= true
 endif
 
--include vendor/huawei/angler/BoardConfigVendor.mk
+# Include vendor files
+include vendor/huawei/angler/BoardConfigVendor.mk
