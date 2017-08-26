@@ -147,4 +147,9 @@ USE_CLANG_PLATFORM_BUILD := true
 
 TARGET_FS_CONFIG_GEN += device/huawei/angler/config.fs
 
+# Conditional to building on linux, as dex2oat currently does not work on darwin.
+ifeq ($(HOST_OS),linux)
+   WITH_DEXPREOPT::= true
+endif
+
 -include vendor/huawei/angler/BoardConfigVendor.mk
