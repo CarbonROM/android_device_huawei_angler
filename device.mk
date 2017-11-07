@@ -52,10 +52,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/huawei/angler/thermal-engine-angler.conf:system/etc/thermal-engine.conf
 
-# Vendor Interface Manifest
-PRODUCT_COPY_FILES += \
-    device/huawei/angler/manifest.xml:vendor/manifest.xml
-
 # Media
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
@@ -129,6 +125,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.location.gps.xml:system/etc/permissions/android.hardware.location.gps.xml \
     frameworks/native/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
     frameworks/native/data/etc/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml \
+    frameworks/native/data/etc/android.hardware.wifi.passpoint.xml:system/etc/permissions/android.hardware.wifi.passpoint.xml \
     frameworks/native/data/etc/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml \
     frameworks/native/data/etc/android.hardware.sensor.light.xml:system/etc/permissions/android.hardware.sensor.light.xml \
     frameworks/native/data/etc/android.hardware.sensor.gyroscope.xml:system/etc/permissions/android.hardware.sensor.gyroscope.xml \
@@ -344,14 +341,6 @@ PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
 # Library used for VTS tests  (only for userdebug and eng builds)
 ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
-# Test HAL for hwbinder performance benchmark.
-PRODUCT_PACKAGES += \
-     android.hardware.tests.libhwbinder@1.0-impl
-
-# Test HAL for FMQ performance benchmark.
-PRODUCT_PACKAGES += \
-     android.hardware.tests.msgq@1.0-impl
-
 # For VTS profiling.
 PRODUCT_PACKAGES += \
      libvts_profiling \

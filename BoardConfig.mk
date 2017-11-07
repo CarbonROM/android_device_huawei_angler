@@ -154,3 +154,6 @@ endif
 
 # Include vendor files
 include vendor/huawei/angler/BoardConfigVendor.mk
+
+DEVICE_MANIFEST_FILE := device/huawei/angler/manifest.xml
+DEVICE_MATRIX_FILE := device/huawei/angler/compatibility_matrix.xml
