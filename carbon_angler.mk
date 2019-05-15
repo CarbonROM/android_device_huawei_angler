@@ -1,5 +1,5 @@
 #
-# Copyright 2013-2017 The StatiX Project
+# Copyright (C) 2016 The Android Open-Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,15 +20,15 @@
 # Inherit from the common product configuration
 $(call inherit-product, device/huawei/angler/aosp_angler.mk)
 
-# Inherit statix's custom configurations
-$(call inherit-product, $(TOPDIR)vendor/statix/config/common.mk)
-$(call inherit-product, $(TOPDIR)vendor/statix/config/gsm.mk)
+# Inherit carbon's custom configurations
+$(call inherit-product, $(TOPDIR)vendor/carbon/config/common.mk)
+$(call inherit-product, $(TOPDIR)vendor/carbon/config/gsm.mk)
 
 # Screen Resolution for the Bootanimation
 TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1440
 
-PRODUCT_NAME := statix_angler
+PRODUCT_NAME := carbon_angler
 PRODUCT_DEVICE := angler
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 6P
