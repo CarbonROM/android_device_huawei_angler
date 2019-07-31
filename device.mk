@@ -286,6 +286,7 @@ PRODUCT_PACKAGES += \
 endif
 
 # for off charging mode
+WITH_LINEAGE_CHARGER := false
 PRODUCT_PACKAGES += \
     charger_res_images
 
